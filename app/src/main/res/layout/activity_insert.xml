@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/lblName"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="75dp"
+    android:text="Measurement Name:"
+    android:textSize="30dp"
+    android:layout_alignParentTop="true"
+    />
+<EditText
+    android:id="@+id/etName"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:layout_toRightOf="@id/lblName"
+    android:layout_alignBottom="@id/lblName"
+    android:textSize="30dp"
+    />
+<TextView
+    android:id="@+id/lblMeasure"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/lblName"
+    android:text="Amount in Teaspoons"
+    android:textSize="30dp"
+    />
+<EditText
+    android:id="@+id/etMeasure"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:layout_toRightOf="@id/lblMeasure"
+    android:layout_alignBottom="@id/lblMeasure"
+    android:textSize="30dp"
+    />
+<Button
+    android:id="@+id/btnInsert"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_below="@id/lblMeasure"
+    android:gravity="center"
+    android:text="Insert"
+    android:textSize="30dp"
+    android:onClick="insert"
+    />
+<Button
+    android:id="@+id/btnClose"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_below="@id/btnInsert"
+    android:gravity="center"
+    android:text="Close"
+    android:textSize="30dp"
+    android:onClick="close"
+    />
+</RelativeLayout>

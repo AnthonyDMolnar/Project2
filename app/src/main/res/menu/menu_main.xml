@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.student.midlandstech.anthonydmolnar.project.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/from"
+        android:title="FROM"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_directions"
+        />
+    <item
+        android:id="@+id/to"
+        android:title="TO"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_more"
+        />
+    <item
+        android:id="@+id/insert"
+        android:title="ADD"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_add"
+        />
+    <item
+        android:id="@+id/about"
+        android:title="ABOUT"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_help"
+        />
+</menu>
