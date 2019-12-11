@@ -15,8 +15,10 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -69,6 +71,17 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
 
+    }
+
+    public void convert(View v) {
+        DecimalFormat df = new DecimalFormat("###.0");
+        TextView answer = findViewById(R.id.lblAnswer);
+        EditText amountStr = findViewById(R.id.etAmount);
+        double amount = Double.parseDouble(amountStr.getText().toString());
+        double result = toMeasure.fromTeaspoons(fromMeasure.toTeaspoons(amount));
+        answer.setText(df.format(amount) + " " + fromMeasure.getName() + " is "
+            + df.format(result) + " " + toMeasure.getName()
+        );
     }
 
     public void onConfigurationChanged(Configuration newConfig) {
